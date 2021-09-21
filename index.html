@@ -9,14 +9,28 @@
     <link rel="stylesheet" href="style.css">
     <title>TuRuta Popayán</title>
 </head>
-<body>
-    
-    
+<header>
     <section id="inicio" class="inicio">
         <div id="banner">
         <h1>TuRuta Popayán</h1>
         </div>
-        <h2 id="saludo">¿Qué quieres hacer hoy?</h2>
+    <nav class="topmenu">
+        <ul class="topmenuitems">
+            <li><a href="#">Iniciar sesión</a>  </li>
+            <li><a href="#">Crear cuenta</a> </li>
+            <li><a href="#">Rutas favoritas</a> </li>
+            <li><a href="#">Noticias</a> </li>
+            <li><a href="#">Pico y placa</a> </li>
+            <li><a href="#">Sitios de interés</a> </li>
+        </ul>
+        <span class="burguermenu">
+            <a href="#"><img class="burguericon"src="/images/menu-hamburguesa.png" alt=""></a>
+        </span>
+    </nav>
+    </section>
+</header>
+<body>
+    <h2 id="saludo">¿Qué quieres hacer hoy?</h2>
         <nav class="nav">
             
             <div class="navitem">
@@ -27,12 +41,9 @@
             </div>
             
         </nav>
-    </section>
-    <br>
-        <a class="backbutton" href="#inicio">Atrás</a>
-        
+    </section> 
     <section id="planearmiviaje" class="planearmiviaje">
-
+        <a class="backbutton" href="#inicio">Atrás</a>
         <div id="origendestino">
         <h3>Origen y destino</h3>
         <input type="text" placeholder="Ingresa un punto de origen"name="origen" id="">
@@ -40,7 +51,9 @@
         <input type="text" placeholder="Ingresa un punto de destino"name="destino" id="">
         <br><br>
         </div>
+        <div class="sendbtn">
         <a class="sendbutton" href="#instrucciones">PLANEAR MI VIAJE</a>
+        </div>
     </section>
     
     <section id="instrucciones" class="instrucciones">
